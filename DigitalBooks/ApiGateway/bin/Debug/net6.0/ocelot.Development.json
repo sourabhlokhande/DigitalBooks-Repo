@@ -1,0 +1,70 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Reader/GetBook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "GET",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7065
+        }
+      ],
+      "UpstreamPathTemplate": "/reader/books/getbooks",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Author/AddBook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7243
+        }
+      ],
+      "UpstreamPathTemplate": "/author/books/addbook",
+      "UpstreamHttpMethod": [ "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Author/AddAuthor",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7243
+        }
+      ],
+      "UpstreamPathTemplate": "/author/user/addauthor",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Auth/Validate",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7266"
+        }
+      ],
+      "UpstreamPathTemplate": "/author/validate",
+      "UpstreamHttpMethod": [ "Post" ]
+
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7298"
+  }
+}
