@@ -40,7 +40,7 @@ namespace AuthorApi.Controllers
                 }
                 else
                 {
-                    return Unauthorized();
+                    return BadRequest();
                 }
                 
             }
