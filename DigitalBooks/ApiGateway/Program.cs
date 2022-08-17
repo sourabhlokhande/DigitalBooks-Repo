@@ -14,6 +14,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options => options.AddPolicy("CorsPolicy",
+    builder =>
+    {
+        builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200/").AllowCredentials();
+    }
+));
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("GatewayAuthenticationKey", option =>
     {
@@ -51,5 +58,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseOcelot().Wait();
-
+app.UseCors("Cors");
 app.Run();
