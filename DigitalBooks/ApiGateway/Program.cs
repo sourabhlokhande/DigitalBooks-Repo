@@ -14,12 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(options => options.AddPolicy("CorsPolicy",
-    builder =>
-    {
-        builder.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200/").AllowCredentials();
-    }
-));
+
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("GatewayAuthenticationKey", option =>
@@ -41,6 +36,15 @@ builder.Services.AddAuthorization();
 var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 builder.Configuration.AddJsonFile($"ocelot.{env}.json");
 builder.Services.AddOcelot().AddPolly();
+
+builder.Services.AddCors((setup) =>
+{
+    setup.AddPolicy("default", (options) =>
+    {
+        options.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -49,7 +53,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseCors("default");
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
@@ -58,5 +62,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseOcelot().Wait();
-app.UseCors("Cors");
+
 app.Run();

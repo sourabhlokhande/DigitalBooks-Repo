@@ -24,16 +24,16 @@ namespace AuthorApi.Controllers
             _authorService = authorService;
         }
 
-       
+        
         [HttpPost("AddBook")]
-        public IActionResult AddBook(Books books) 
+        public IActionResult AddBook(Books books)
         {
             try
             {
 
                 var identity = HttpContext.User.Identity as ClaimsIdentity;
 
-                if(appAuthorization.AppAuth(identity))
+                if (appAuthorization.AppAuth(identity))
                 {
                     var result = _bookService.AddBook(books);
                     return Ok(result);
@@ -42,14 +42,16 @@ namespace AuthorApi.Controllers
                 {
                     return BadRequest();
                 }
-                
+
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
-            
+
         }
+
+
 
         [AllowAnonymous]
         [HttpPost("AddAuthor")]

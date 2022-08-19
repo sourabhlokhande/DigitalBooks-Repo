@@ -128,11 +128,11 @@ C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthorApi\obj\
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthorApi\obj\Debug\net6.0\AuthorApi.pdb
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthorApi\obj\Debug\net6.0\AuthorApi.genruntimeconfig.cache
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthorApi\obj\Debug\net6.0\ref\AuthorApi.dll
-C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\appsettings.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\ModelService.deps.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\ModelService.runtimeconfig.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\ModelService.exe
+C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\appsettings.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\AuthorApi.exe
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\AuthorApi.deps.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthorApi\bin\Debug\net6.0\AuthorApi.runtimeconfig.json

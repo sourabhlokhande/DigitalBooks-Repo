@@ -126,11 +126,11 @@ C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthService\ob
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthService\obj\Debug\net6.0\AuthService.pdb
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthService\obj\Debug\net6.0\AuthService.genruntimeconfig.cache
 C:\Users\cogdotnet1357\Downloads\DigitalBooks-master\DigitalBooks\AuthService\obj\Debug\net6.0\ref\AuthService.dll
-C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\appsettings.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\ModelService.deps.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\ModelService.runtimeconfig.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\ModelService.exe
+C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\appsettings.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\AuthService.exe
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\AuthService.deps.json
 C:\Users\cogdotnet1357\source\repos\DigitalBooks-Repo\DigitalBooks\AuthService\bin\Debug\net6.0\AuthService.runtimeconfig.json
