@@ -46,5 +46,36 @@ namespace ReaderApi.Controllers
             }
 
         }
+
+        [HttpPost("SearchBook")]
+        public IActionResult SearchBook(Books books)
+        {
+            try
+            {
+                IEnumerable<Books> result = _readerService.SearchBook(books);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        
+        [HttpPost("GetAuthorBook")]
+        public IActionResult GetAuthorBook(Author author)
+        {
+            try
+            {
+                IEnumerable<Books> result = _readerService.GetAuthorBook(author.AuthorName);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
