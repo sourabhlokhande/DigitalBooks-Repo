@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelService", "ModelService\ModelService.csproj", "{E6D74326-FBC2-4EDD-BFBC-5D22DF1ABCA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelService", "ModelService\ModelService.csproj", "{E6D74326-FBC2-4EDD-BFBC-5D22DF1ABCA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorApi", "AuthorApi\AuthorApi.csproj", "{44979CE1-E6E5-4091-B75A-BD66872AB870}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorApi", "AuthorApi\AuthorApi.csproj", "{44979CE1-E6E5-4091-B75A-BD66872AB870}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderApi", "ReaderApi\ReaderApi.csproj", "{5DB97D7D-833D-4CBC-B69E-DEBDB3F739F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReaderApi", "ReaderApi\ReaderApi.csproj", "{5DB97D7D-833D-4CBC-B69E-DEBDB3F739F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{35DDBDED-D9E6-4BAC-A76E-5F9B004B5A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{35DDBDED-D9E6-4BAC-A76E-5F9B004B5A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{193F2F11-76A2-414A-B94D-1EC49C2CE215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthService", "AuthService\AuthService.csproj", "{193F2F11-76A2-414A-B94D-1EC49C2CE215}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentGateway", "PaymentGateway\PaymentGateway.csproj", "{7702B06B-FC10-46B0-965C-8A49AA0AD41D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{193F2F11-76A2-414A-B94D-1EC49C2CE215}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{193F2F11-76A2-414A-B94D-1EC49C2CE215}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{193F2F11-76A2-414A-B94D-1EC49C2CE215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7702B06B-FC10-46B0-965C-8A49AA0AD41D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7702B06B-FC10-46B0-965C-8A49AA0AD41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7702B06B-FC10-46B0-965C-8A49AA0AD41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7702B06B-FC10-46B0-965C-8A49AA0AD41D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

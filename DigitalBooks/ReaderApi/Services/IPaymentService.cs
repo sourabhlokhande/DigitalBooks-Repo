@@ -5,5 +5,6 @@ namespace ReaderApi.Services
     public interface IPaymentService
     {
         string BuyBook(Payment payment);
+        IEnumerable<Payment> GetPurchasedBook(Payment payment);
     }
 }
