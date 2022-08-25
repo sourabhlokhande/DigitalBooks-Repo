@@ -51,6 +51,30 @@ namespace AuthorApi.Controllers
 
         }
 
+        [HttpPut("UpdateBook")]
+        public IActionResult UpdateBook(Books books)
+        {
+            try
+            {
+
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                if (appAuthorization.AppAuth(identity))
+                {
+                    var result = _bookService.UpdateBook(books);
+                    return Ok(result);
+                }
+                else
+                {
+                    return BadRequest();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
 
 
         [AllowAnonymous]

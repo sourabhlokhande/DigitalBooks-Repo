@@ -77,5 +77,21 @@ namespace ReaderApi.Controllers
             }
 
         }
+
+        
+        [HttpPost("GetPurchasedBook")]
+        public IActionResult GetPurchasedBook(Payment payment)
+        {
+            try
+            {
+               IEnumerable<Payment> result = _paymentService.GetPurchasedBook(payment);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }

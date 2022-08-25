@@ -56,6 +56,20 @@
       "UpstreamPathTemplate": "/reader/books/buybook",
       "UpstreamHttpMethod": [ "Post" ]
     },
+    {
+      "DownstreamPathTemplate": "/api/Reader/GetPurchasedBook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "POST",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7065
+        }
+      ],
+      "UpstreamPathTemplate": "/reader/books/getpurchasedbook",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
 
     {
       "DownstreamPathTemplate": "/api/Author/AddBook",
@@ -75,6 +89,26 @@
         "AllowedScopes": []
       }
     },
+
+    {
+      "DownstreamPathTemplate": "/api/Author/UpdateBook",
+      "DownstreamSchema": "https",
+      "DownstreamHttpMethod": "PUT",
+      "RouteIsCaseSensitive": false,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7243
+        }
+      ],
+      "UpstreamPathTemplate": "/author/books/updatebook",
+      "UpstreamHttpMethod": [ "Put" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "GatewayAuthenticationKey",
+        "AllowedScopes": []
+      }
+    },
+
     {
       "DownstreamPathTemplate": "/api/Author/AddAuthor",
       "DownstreamSchema": "https",

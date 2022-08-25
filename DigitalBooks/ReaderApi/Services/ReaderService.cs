@@ -29,7 +29,7 @@ namespace ReaderApi.Services
         {
             try
             {
-                return _dbContext.BookTbl.ToList();
+                return _dbContext.BookTbl.ToList().Where(b => b.Active == true);
             }
             catch (Exception ex)
             {
@@ -42,7 +42,7 @@ namespace ReaderApi.Services
         {
             try
             {
-                return _dbContext.BookTbl.Where(b => b.Title.Contains(filter.Title) || b.Publisher.Contains(filter.Publisher) || b.Category.Contains(filter.Category) || b.Price.Equals(filter.Price)).ToList();
+                return _dbContext.BookTbl.Where(b => b.Title.Contains(filter.Title) || b.Publisher.Contains(filter.Publisher) || b.Category.Contains(filter.Category) || b.Price.Equals(filter.Price)).ToList().Where(b=> b.Active == true);
             }
             catch (Exception ex)
             {

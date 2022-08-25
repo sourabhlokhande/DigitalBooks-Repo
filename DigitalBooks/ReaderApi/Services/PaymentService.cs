@@ -25,5 +25,20 @@ namespace ReaderApi.Services
             }
 
         }
+
+        public IEnumerable<Payment> GetPurchasedBook(Payment payment)
+        {
+            try
+            {
+
+
+                IEnumerable<Payment>  paymentHistory = _dbContext.PaymentTbl.Where(p => p.Email == payment.Email);
+                return paymentHistory;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
