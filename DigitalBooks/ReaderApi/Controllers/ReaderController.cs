@@ -93,5 +93,21 @@ namespace ReaderApi.Controllers
             }
 
         }
+
+        
+         [HttpPost("GetBookDetails")]
+        public IActionResult GetBookDetails(Payment payment)
+        {
+            try
+            {
+                IEnumerable<Books> result = _paymentService.GetBookDetails(payment);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
