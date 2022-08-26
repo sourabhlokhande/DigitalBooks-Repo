@@ -26,6 +26,20 @@ namespace ReaderApi.Services
 
         }
 
+        public IEnumerable<Books> GetBookDetails(Payment payment)
+        {
+            try
+            {
+                IEnumerable<Books> book = _dbContext.BookTbl.Where(b => b.BookId == payment.BookId);
+                return book;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
         public IEnumerable<Payment> GetPurchasedBook(Payment payment)
         {
             try
