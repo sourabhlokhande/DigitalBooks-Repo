@@ -26,6 +26,22 @@ namespace ReaderApi.Services
 
         }
 
+        public bool CheckReader(Payment payment)
+        {
+            var data = _dbContext.PaymentTbl.Where(p => p.Email.Equals(payment.Email) && p.BookId == payment.BookId).Select(p => p.PaymentId);
+            if(data.Any())
+            {
+    
+                return true;
+                              
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+
         public IEnumerable<Books> GetBookDetails(Payment payment)
         {
             try

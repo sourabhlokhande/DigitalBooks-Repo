@@ -109,5 +109,20 @@ namespace ReaderApi.Controllers
             }
 
         }
+
+        [HttpPost("CheckReader")]
+        public IActionResult CheckReader(Payment payment)
+        {
+            try
+            {
+               var result = _paymentService.CheckReader(payment);
+               return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
