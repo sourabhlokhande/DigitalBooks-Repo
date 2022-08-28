@@ -7,5 +7,6 @@ namespace ReaderApi.Services
         string BuyBook(Payment payment);
         IEnumerable<Payment> GetPurchasedBook(Payment payment);
         IEnumerable<Books> GetBookDetails(Payment payment);
+        bool CheckReader(Payment payment);
     }
 }
